@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/form.css" th:href="@{/css/form.css}"/>
+    <title>Contact Us</title>
+
+
+</head>
+<body>
+
+<div class="headerimage">
+    <a href="index.html" th:href="@{/}"><img src="../static/images/clarks.png" th:src="@{/images/clarks.png}"></a>
+
+
+    <div class="custom-padding">
+        <nav>
+
+            <ul class="menu-area">
+                <li><a href="index.html" th:href="@{/}">Home</a></li>
+                <li><a href="Mens.html" th:href="@{/Mens.html}">Men's</a></li>
+                <li><a href="womens.html" th:href="@{/womens.html}">Women's</a></li>
+                <li><a href="contactus.html" th:href="@{contactus.html}">Contact</a></li>
+                <li><a href="/book" th:href="@{/book}">Register Interest</a></li>
+                <li><a href="register.html" th:href="@{/register}">Sign Up</a></li>
+                <li><a href="/profile" th:href="@{/profile}">Profile</a></li>
+                <li><a href="/login" th:href="@{/login}">Login</a></li>
+                <li><a href="/logout" th:href="@{/logout}">Log Out</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+
+<div class="container contact-form">
+
+    <form method="post">
+        <h3>Drop Us a Message</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" name="txtName" class="form-control" required placeholder="Your Name *" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="email"  name="txtEmail" class="form-control" required placeholder="Your Email *" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="number" name="txtPhone" class="form-control" required placeholder="Your Phone Number *" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="btnSubmit" class="btnContact"  value="Send Message" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <textarea name="txtMsg" class="form-control" required placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<footer >Muhammad Islam</footer>
+
+
+<script type="text/javascript" src="../static/js/form.js" th:src="@{/js/form.js}"></script>
+
+</body>
+</html>

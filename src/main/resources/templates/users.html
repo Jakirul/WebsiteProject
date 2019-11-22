@@ -1,0 +1,65 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/database.css}" href="../static/css/database.css" />
+    <title>User Profile</title>
+</head>
+<body>
+<main>
+    <div class="headerimage">
+        <a href="index.html" th:href="@{/}"><img src="../static/images/clarks.png" th:src="@{/images/clarks.png}"></a>
+
+
+        <div class="custom-padding">
+            <nav>
+
+                <ul class="menu-area">
+                    <li><a href="index.html" th:href="@{/}">Home</a></li>
+                    <li><a href="Mens.html" th:href="@{/Mens.html}">Men's</a></li>
+                    <li><a href="womens.html" th:href="@{/womens.html}">Women's</a></li>
+                    <li><a href="contactus.html" th:href="@{contactus.html}">Contact</a></li>
+                    <li><a href="/book" th:href="@{/book}">Register Interest</a></li>
+                    <li><a href="register.html" th:href="@{/register}">Sign Up</a></li>
+                    <li><a href="/profile" th:href="@{/profile}">Profile</a></li>
+                    <li><a href="/login" th:href="@{/login}">Login</a></li>
+                    <li><a href="/logout" th:href="@{/logout}">Log Out</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <header class="banner">
+        <h1>User list</h1>
+    </header>
+
+    <section class="central">
+        <p>There are <span th:text="${users.size()}">#0</span> users on the site.</p>
+
+
+        <table>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.firstName}">#firstName</td>
+                <td th:text="${user.lastName}">#lastName</td>
+                <td th:text="${user.email}">#email</td>
+            </tr>
+        </table>
+
+    </section>
+
+    <table>
+        <tr>
+            <th>Login History</th>
+        </tr>
+        <tr th:each="login : ${user.logins}">
+            <td th:text="${login.time}">1st March 2019</td>
+        </tr>
+    </table>
+
+<footer >Muhammad Islam</footer>
+
+
+
+</main>
+</body>
+</html>

@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-align:center;
+
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+/* Nav Bar Starts Here */
+
+.headerimage {
+    background-image: url(../images/bg.png);
+}
+
+.menu-area li a {
+    text-decoration: none;
+}
+
+.menu-area li {
+    list-style-type: none;
+}
+
+.custom-padding{
+    padding-top: 15px;
+    text-align:center;
+}
+
+img {
+    height: auto;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:15px;
+}
+
+nav {
+    position: relative;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    padding: 10px 0;
+    background: #333;
+    z-index: 1;
+    padding-right: 2%;
+    text-align:center;
+}
+
+.menu-area li {
+    display: inline-block;
+}
+
+.menu-area a {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+}
+.menu-area a:hover {
+    background: tomato;
+    color: #fff;
+}
+
+.menu-area a:hover:after {
+    transform: translateY(-50%) rotate(-35deg);
+}
+
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .menu-area {
+        display:block;
+    }
+
+}
+
+/* Nav Bar Ends Here */
+
+
+/* Product Grid Starts Here */
+
+/* Flex container */
+#p-flex {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* Product items */
+div.p-flex {
+    width: 25%;
+}
+div.p-flex-in {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #e7fcde;
+    background: #f6fff2;
+}
+img.p-img {
+    width: 100%;
+    height: auto;
+}
+div.p-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+div.p-price {
+    color: #f44242;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+    div.p-flex { width: 33%; }
+}
+@media only screen and (max-width: 600px) {
+    div.p-flex { width: 50%; }
+}
+
+
+.Title {
+    text-align: center;
+    padding: 25px;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+/* Product Grid Ends Here */
+
+footer {
+    background-color: #86939E;
+    margin-top:calc(5% + 60px);
+    padding: 5px;
+}
+
+@media (max-width: 640px){
+    #nav > ul > li {width: 100%; clear: both;}
+}
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/mensShoe1.css" th:href="@{/css/mensShoe1.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <title>Reebok White & Blue Workout Plus Trainers</title>
+</head>
+<body>
+
+
+<div class="headerimage">
+    <a href="index.html" th:href="@{/}"><img src="../static/images/clarks.png" th:src="@{/images/clarks.png}"></a>
+
+
+    <div class="custom-padding">
+        <nav>
+
+            <ul class="menu-area">
+                <li><a href="index.html" th:href="@{/}">Home</a></li>
+                <li><a href="Mens.html" th:href="@{/Mens.html}">Men's</a></li>
+                <li><a href="womens.html" th:href="@{/womens.html}">Women's</a></li>
+                <li><a href="contactus.html" th:href="@{contactus.html}">Contact</a></li>
+                <li><a href="/book" th:href="@{/book}">Register Interest</a></li>
+                <li><a href="register.html" th:href="@{/register}">Sign Up</a></li>
+                <li><a href="/profile" th:href="@{/profile}">Profile</a></li>
+                <li><a href="/login" th:href="@{/login}">Login</a></li>
+                <li><a href="/logout" th:href="@{/logout}">Log Out</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Size Guide</h2>
+
+        <table>
+            <tr>
+                <th id="MensSG" colspan="3" >Men's</th>
+
+            </tr>
+            <tr>
+                <td>UK</td>
+                <td>EU</td>
+                <td>US</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>40 &#189;</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>7.5</td>
+                <td>41</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>42</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>8.5</td>
+                <td>42 &#189;</td>
+                <td>9.5</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>43</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>9.5</td>
+                <td>44</td>
+                <td>10.5</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>44 &#189;</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>10.5</td>
+                <td>45</td>
+                <td>11.5</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>45 &#189;</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>11.5</td>
+                <td>46</td>
+                <td>12.5</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>47</td>
+                <td>13</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+
+<main class="container" >
+
+    <!-- Left Column / Headphones Image -->
+    <div class="left-column">
+
+        <img data-image="red" class="active" src="../static/images/shoe1.jpg" th:src="@{/images/shoe1.jpg}">
+    </div>
+
+
+    <!-- Right Column -->
+    <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+
+            <h1>Reebok White & Blue Workout Plus Trainers</h1>
+            <p> This classic trainer arrives in an all-white colourway for a minimalistic look. Iconic branding in blue completes. </p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+
+
+            <!-- Cable Configuration -->
+            <div class="shoe-size">
+                <span>Shoe Sizes</span>
+
+                <div class="shoe-pick">
+                    <button>7</button>
+                    <button>7 &#189;</button>
+                    <button>8</button>
+                    <button>8 &#189;</button>
+                    <button>9</button>
+                    <button>9 &#189;</button>
+                    <button>10</button>
+                    <button>10 &#189;</button>
+                    <button>11</button>
+                    <button>11 &#189;</button>
+                    <button>12</button>
+                </div>
+
+                <a id="myBtn" >Size Guide</a>
+            </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+            <span class="price">148$</span>
+            <a href="/book" class="cart-btn">Register Interest</a>
+        </div>
+    </div>
+
+
+</main>
+
+
+<footer >Muhammad Islam</footer>
+
+
+
+<script type="text/javascript" src="../static/js/mensShoe1.js" th:src="@{/js/mensShoe1.js}"></script>
+
+</body>
+</html>

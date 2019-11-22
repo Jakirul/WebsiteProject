@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+
+    <title>Home Page</title>
+</head>
+<body>
+
+    <div class="headerimage">
+        <a href="index.html" th:href="@{/}"><img src="../static/images/clarks.png" th:src="@{/images/clarks.png}"></a>
+
+
+        <div class="custom-padding">
+            <nav>
+
+                <ul class="menu-area">
+                    <li><a href="index.html" th:href="@{/}">Home</a></li>
+                    <li><a href="Mens.html" th:href="@{/Mens.html}">Men's</a></li>
+                    <li><a href="womens.html" th:href="@{/womens.html}">Women's</a></li>
+                    <li><a href="contactus.html" th:href="@{contactus.html}">Contact</a></li>
+                    <li><a href="/book" th:href="@{/book}">Register Interest</a></li>
+                    <li><a href="register.html" th:href="@{/register}">Sign Up</a></li>
+                    <li><a href="/profile" th:href="@{/profile}">Profile</a></li>
+                    <li><a href="/login" th:href="@{/login}">Login</a></li>
+                    <li><a href="/logout" th:href="@{/logout}">Log Out</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+
+    <div class = "container">
+        <h1 class="Mens">Men's</h1>
+        <div class="btn">
+
+            <a class="button" href="Mens.html" th:href="@{/Mens.html}">View More</a>
+
+        </div>
+        <!-- PRODUCT -->
+        <div class="product-thumb">
+            <div class="product-thumb-image">
+                <a href="mensShoe1.html" th:href="@{/mensShoe1.html}"><img src="../static/images/shoe1.jpg"  th:src="@{images/shoe1.jpg}"></a>
+
+            </div>
+            <div class="product-thumb-title">
+                <h3>Reebok Shoe</h3>
+                <h3>Price : <span>£44.99</span></h3>
+            </div>
+        </div>
+
+
+
+        <!-- PRODUCT -->
+        <div class="product-thumb">
+            <div class="product-thumb-image">
+                <a href="mensShoe2.html" th:href="@{/mensShoe2.html}"><img src="../static/images/shoe2.jpg" th:src="@{images/shoe2.jpg}"></a>
+
+            </div>
+            <div class="product-thumb-title">
+                <h3>Vans Shoe</h3>
+                <h3>Price : <span>£60</span></h3>
+            </div>
+        </div>
+
+
+
+        <!-- PRODUCT -->
+        <div class="product-thumb">
+            <div class="product-thumb-image">
+                <a href="mensShoe3.html" th:href="@{/mensShoe3.html}"><img src="../static/images/shoe3.jpg" th:src="@{images/shoe3.jpg}"></a>
+
+            </div>
+            <div class="product-thumb-title">
+                <h3>Nike White Air Force 1 07 Trainers</h3>
+                <h3>Price : <span>£75</span></h3>
+            </div>
+        </div>
+
+
+        <!-- PRODUCT -->
+        <div class="product-thumb">
+            <div class="product-thumb-image">
+                <a href="mensShoe4.html" th:href="@{/mensShoe4.html}"><img src="../static/images/shoe4.jpg" th:src="@{images/shoe4.jpg}"></a>
+
+            </div>
+            <div class="product-thumb-title">
+                <h3>Adidas Trainers</h3>
+                <h3>Price : <span>£31.99</span></h3>
+            </div>
+        </div>
+
+        <div class = "nextline">
+
+            <h1 class="Women" th:href="@{templates/womens.html}">Women's</h1>
+            <div class="btn2">
+
+                <a class="button" href="womens.html">View More</a>
+
+            </div>
+            <!-- PRODUCT -->
+
+            <div class="product-thumb1">
+                <div class="product-thumb-image">
+                    <a href="womensShoe1.html" th:href="@{/womensShoe1.html}"><img src="../static/images/shoe5.jpg" th:src="@{images/shoe5.jpg}"></a>
+
+                </div>
+                <div class="product-thumb-title">
+                    <h3>Vans Shoe</h3>
+                    <h3>Price : <span>£60</span></h3>
+                </div>
+            </div>
+
+
+            <!-- PRODUCT -->
+            <div class="product-thumb1">
+                <div class="product-thumb-image">
+                    <a href="womensShoe2.html" th:href="@{/womensShoe2.html}"><img src="../static/images/shoe6.jpg" th:src="@{images/shoe6.jpg}"></a>
+
+                </div>
+                <div class="product-thumb-title">
+                    <h3>Converse Shoe</h3>
+                    <h3>Price : <span>£60</span></h3>
+                </div>
+            </div>
+
+
+            <!-- PRODUCT -->
+            <div class="product-thumb1">
+                <div class="product-thumb-image">
+                    <a href="womensShoe3.html" th:href="@{/womensShoe3.html}"><img src="../static/images/shoe7.jpg" th:src="@{images/shoe7.jpg}"></a>
+
+                </div>
+                <div class="product-thumb-title">
+                    <h3>Converse Shoe</h3>
+                    <h3>Price : <span>£34.99</span></h3>
+                </div>
+            </div>
+
+
+            <!-- PRODUCT -->
+
+            <div class="product-thumb1">
+                <div class="product-thumb-image">
+                    <a href="womensShoe4.html" th:href="@{/womensShoe4.html}"><img src="../static/images/shoe8.jpg" th:src="@{images/shoe8.jpg}"></a>
+
+                </div>
+                <div class="product-thumb-title">
+                    <h3>Vans Shoe</h3>
+                    <h3>Price : <span>26.99</span></h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+<footer>Muhammad Islam</footer>
+
+
+
+
+<script type="text/javascript" src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+
+
+
+
+
+</body>
+</html>

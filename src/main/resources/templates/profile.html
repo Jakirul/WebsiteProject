@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/profile.css}" href="../static/css/profile.css" />
+    <title>Profile</title>
+</head>
+<body>
+<main>
+    <div class="headerimage">
+        <a href="index.html" th:href="@{/}"><img src="../static/images/clarks.png" th:src="@{/images/clarks.png}"></a>
+
+
+        <div class="custom-padding">
+            <nav>
+
+                <ul class="menu-area">
+                    <li><a href="index.html" th:href="@{/}">Home</a></li>
+                    <li><a href="Mens.html" th:href="@{/Mens.html}">Men's</a></li>
+                    <li><a href="womens.html" th:href="@{/womens.html}">Women's</a></li>
+                    <li><a href="contactus.html" th:href="@{contactus.html}">Contact</a></li>
+                    <li><a href="/book" th:href="@{/book}">Register Interest</a></li>
+                    <li><a href="register.html" th:href="@{/register}">Sign Up</a></li>
+                    <li><a href="/profile" th:href="@{/profile}">Profile</a></li>
+                    <li><a href="/login" th:href="@{/login}">Login</a></li>
+                    <li><a href="/logout" th:href="@{/logout}">Log Out</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <header class="banner">
+        <h1 id="loginhistory" >Profile</h1>
+    </header>
+
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <div class="names">
+            <tr>
+                <td th:text="${collatedUser.getShoeUser().firstName}">First Name</td>
+                <td th:text="${collatedUser.getShoeUser().lastName}">Second Name</td>
+            </tr>
+        </div>
+    </table>
+    <br/>
+
+    <table>
+        <tr>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+        <div class="names">
+            <tr>
+                <td th:text="${collatedUser.getShoeUser().email}">Email</td>
+                <td th:text="${collatedUser.getShoeUser().address}">Address</td>
+            </tr>
+        </div>
+    </table>
+    <br/>
+
+
+    <table >
+        <tr>
+            <th >Login History</th>
+        </tr>
+        <tr th:each="login : ${collatedUser.logins}">
+            <td th:text="${login.time}">1st January 2019</td>
+        </tr>
+    </table>
+    <br/>
+    <table>
+        <tr>
+            <th>Shoe</th>
+            <th>Size</th>
+            <th>Qty</th>
+        </tr>
+        <tr th:each="booking : ${collatedUser.bookings}">
+            <td th:text="${booking.shoe}" >Carmen</td>
+            <td th:text="${booking.size}" >Carmen</td>
+            <td th:text="${booking.quantity}" >2</td>
+        </tr>
+    </table>
+
+<footer >Muhammad Islam</footer>
+
+
+
+
+</main>
+
+
+</body>
+</html>

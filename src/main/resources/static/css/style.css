@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-align:center;
+
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+/* Nav Bar Starts Here */
+.headerimage {
+    background-image: url(../images/bg.png);
+}
+
+.menu-area li a {
+    text-decoration: none;
+}
+
+.menu-area li {
+    list-style-type: none;
+}
+
+.custom-padding{
+    padding-top: 15px;
+    text-align:center;
+}
+
+img {
+    height: auto;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:15px;
+}
+
+nav {
+    position: relative;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    padding: 10px 0;
+    background: #333;
+    z-index: 1;
+    padding-right: 2%;
+    text-align:center;
+
+}
+
+.menu-area li {
+    display: inline-block;
+}
+
+.menu-area a {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+}
+.menu-area a:hover {
+    background: tomato;
+    color: #fff;
+}
+
+.menu-area a:hover:after {
+    transform: translateY(-50%) rotate(-35deg);
+}
+
+@media (max-width: 640px){
+    #nav > ul > li {width: 100%; clear: both;}
+}
+
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .menu-area {
+        display:block;
+    }
+
+}
+
+/* Nav Bar Ends Here */
+
+.product-thumb{
+    width: 240px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin: 55px;
+
+
+
+
+}
+
+.product-thumb1{
+    width: 240px;
+    height: auto;
+    display: inline-block;
+    margin: 55px;
+
+
+    position: relative; /* Declared position allows for location changes */
+    top: -50px;
+}
+/**/
+
+.product-thumb-title{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    font-weight: normal;
+
+}
+.product-thumb-title h3{
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #303030;
+    text-align: center;
+
+
+}
+.product-thumb-title h3 span{
+    color: #ff7800;
+
+}
+
+
+
+footer {
+    background-color: #86939E;
+    margin-top:calc(5% + 60px);
+    padding: 5px;
+}
+
+.Mens {
+    text-align:center;
+    position:relative;
+    top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Women {
+    text-align:center;
+    position:relative;
+    top: -30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    text-align: center;
+    position:relative;
+    margin-right:0px;
+    display: block;
+    top: 30px;
+}
+
+.btn2 {
+    text-align: center;
+    position:relative;
+    margin-right:0px;
+    display: block;
+    top: -32px;
+}
+.button {
+    text-align:center;
+    position:relative;
+    top: 20px;
+    padding: 12px 24px;
+    border: 1px solid #a12727;
+    border-radius: 8px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#992727));
+    background: linear-gradient(to bottom, #ff4a4a, #992727);
+    text-shadow: #591717 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    background: #ff5959;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#b62f2f));
+    background: linear-gradient(to bottom, #ff5959, #b62f2f);
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
